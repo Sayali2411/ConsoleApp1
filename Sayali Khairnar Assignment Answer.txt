@@ -1,0 +1,175 @@
+					Assignment Answer
+
+
+Que :- Diffrence between else if ladder and swich?
+
+BASIS OF COMPARISON                         ELSE IF LADDER                                  SWITCH CASE
+
+ The control                                           In else if ladder, the control runs                      In else if ladder, the control
+                                                              through the every else if                                 runs through the every else if
+                                                              statement until it arrives at the                        statement until it arrives at the 
+			              rue value of the statement or                          true value of the statement or
+                                                              until it comes to the end of the                       until it comes to the end of the
+                                                              else if ladder.                                                 else if ladder.  
+
+
+  Working	                                            Else if ladder statement works                           Switch case statement work on the 
+			           on the basis of true false                                    basis of equality operator.
+ 			           (zero/non-zero) basis.	
+
+
+  Use of Break Statement                        In switch, the use of break statement                   In else if ladder, the use of break
+			           is mandatory and very important.                        statement is not very essential.  
+
+
+  Variable Data                                      Integer is the only variable data type that               Either integer or character is the variable 
+                                                           can be in expression of switch.                           data type used in the expression of else if ladder
+
+  Usage                                                Else if ladder is used when there is                       Switch case is used when there is only one condition 
+                                                          multiple conditions are to be tested.                     and multiple values of the same are to be tested.  
+
+
+Que :- Diffrence between String, StringBuffer and StringBuilder?
+
+   Parameter              String                                   StringBuffer                              StringBuilder
+
+   Storage                String Pool                            Heap                                          Heap            
+  
+
+   Thread Safe         Not used in a 
+                              threaded environment            Used in a multi-threaded             Used in a single-threaded 
+                                                                          environment                               environment
+
+   Performance         Slow                                   Slower than StringBuilder            Faster than StringBuffer
+                                                                          but faster than String
+
+
+   Syntax               String var =“Edureka”;           StringBuffer var = new               StringBuilder var = new         
+                            String var=new String             StringBuffer("Edureka");            StringBuilder("Edureka");    
+	            (“Edureka”);   
+
+
+Que :- What is Collection and its Hierarchy?
+
+Collection is a set or group of related objects. It is like the array but it has some advanced features of shrinking and growing the collection.
+ Each collection is a class, which we need to declare or create the object of that class before adding any element. All collections are available in System.
+
+hierarchy of collection :- IEnumerable is the base interface of all collections. It provides an enumerator for simple iteration. 
+		     It has a method GetEnumerator() that returns an enumerator that iterates through a collection.
+
+Que :- What is Collection Framework?
+
+A collection is a set of similarly typed objects that are grouped together.
+A collections is a set of similarly type of elements that are grouped together System.
+Collection namespace contains interfaces and classes that define various collections of objects, such as lists, queue, hash tables and dictionaries, and so on.
+Memory management is done automatically for all the collections. This becomes easy for a .NET developer to handle objects
+
+Que  :- What are the interfaces available in collection?
+
+	Interface              Description
+	
+	IEnumerable        Provides an enumerator which supports a simple iteration over a non-generic collection.
+	
+	ICollection          Defines size, enumerators and synchronization methods for all nongeneric collections.
+	
+	IDictionary          Represents a nongeneric collection of key/value pairs.
+
+	IList                    Represents a non-generic collection of objects that can be individually accessed by index.
+
+Que :- Diffrence between Array and ArrayList?
+
+	Array                                                                                  ArrayList
+                Array is strongly typed. This means that an array                  ArrayList can store any type of items\elements.
+               can store only specific type of items\elements   
+
+               In arrays we can store only one datatype either int,                In arraylist we can store all the datatype values
+               string, char etc…        
+ 
+              Array cant accept null                                                           ArrayList collection accepts null
+
+             Arrays belong to System.Array namespace                            Arraylist belongs to System.Collection namespaces
+             using System.Collections;
+             using System;
+	
+           Example -                                                                               Example -
+           int[] intArray=new int[]{2};                                                     ArrayList Arrlst = new ArrayList();
+           intArray[0] = 1;                                                                      Arrlst.Add("Sagar");
+           intArray[0] = 1;                                                                      Arrlst.Add(1);
+           intArray[2] = 2;                                                                      Arrlst.Add(null);
+
+Que :- Benifits of Multithreading?
+ Improved performance :- Provides improvement in the performance of the processor by simultaneous execution 
+		       of computation and the I/O operations.
+
+ Minimized system resource usage :- Minimizes the use of system resources by using threads, which share the 
+			      same address space and belong to the same process.
+
+Simultaneous access to multiple applications :- Provides access to multiple applications at the same time because 
+				      of quick context switching among threads.
+
+Program structure simplification :- Simplifies the structure of complex applications, such as multimedia applications.
+                                                    Each activity can be written in separate methods that makes complex program easy 
+			    to design and code.
+
+Que :- Thread Lifecycle with its various Methods?
+
+There are following states in the life cycle of a Thread.
+
+Unstarted :- When the instance of Thread class is created, it is in unstarted state by default.
+Runnable (Ready to run) :- When start() method on the thread is called, it is in runnable or ready to run state.
+Running :- Only one thread within a process can be executed at a time. At the time of execution, thread is in running state.
+Not Runnable :- The thread is in not runnable state, if sleep() or wait() method is called on the thread, or input/output operation is blocked.
+Dead (Terminated) :- After completing the task, thread enters into dead or terminated state.
+
+Que :- What is SQL?
+SQL is the standard language for dealing with Relational Databases. SQL can be used to insert, search, update, and delete database records.
+ SQL can do lots of other operations, including optimizing and maintenance of databases.
+
+Categories of command with description
+1) Data Definition Language (DDL) :- DDL changes the structure of the table like creating a table, deleting a table, altering a table, etc.
+                                                    All the command of DDL are auto-committed that means it permanently save all the changes in the database.
+CREATE :- It is used to create a new table in the database.
+ALTER :- It is used to delete both the structure and record stored in the table.
+DROP :- It is used to alter the structure of the database. This change could be either to modify the characteristics 
+              of an existing attribute or probably to add a new attribute.
+TRUNCATE :- It is used to delete all the rows from the table and free the space containing the table.
+
+2) Data Manipulation Language(DML) :- DML commands are used to modify the database. It is responsible for all form of changes in the database.
+INSERT :- The INSERT statement is a SQL query. It is used to insert data into the row of a table.
+UPDATE :- This command is used to update or modify the value of a column in the table.
+DELETE :- It is used to remove one or more row from a table.
+
+3) Data Control Language(DCL) :- DCL commands are used to grant and take back authority from any database user.
+Grant :- It is used to give user access privileges to a database.
+Revoke :- It is used to take back permissions from the user.
+
+4) Transaction Control Language(TCL) :- TCL commands can only use with DML commands like INSERT, DELETE and UPDATE only.
+COMMIT :- Commit command is used to save all the transactions to the database.
+ROLLBACK :- Rollback command is used to undo transactions that have not already been saved to the database.
+SAVEPOINT :- It is used to roll the transaction back to a certain point without rolling back the entire transaction.
+
+Que :- Data types in SQL?
+CHAR :- A FIXED length string (can contain letters, numbers, and special characters).
+VARCHAR :- VARIABLE length string (can contain letters, numbers, and special characters).
+BINARY :-Equal to CHAR(), but stores binary byte strings. The size parameter specifies the column length in bytes.
+VARBINARY :- Equal to VARCHAR(), but stores binary byte strings.
+LONGTEXT :- Holds a string with a maximum length of 4,294,967,295 characters
+INT :-  A medium integer. Signed range is from -2147483648 to 2147483647. Unsigned range is from 0 to 4294967295.
+FLOAT :- floating point number. The total number of digits is specified in size.
+DOUBLE :- A normal-size floating point number. The total number of digits is specified in size.
+DATETIME :- A date and time combination. Format: YYYY-MM-DD hh:mm:ss. The supported range is from '1000-01-01 00:00:00' to '9999-12-31 23:59:59'.
+TIMESTAMP :- A timestamp. TIMESTAMP values are stored as the number of seconds since the Unix epoch			
+
+Que :- What is Relational Data Model?
+Relational Model (RM) represents the database as a collection of relations. 
+A relation is nothing but a table of values. Every row in the table represents a collection of related data values. 
+These rows in the table denote a real-world entity or relationship.
+
+
+
+
+
+
+
+
+

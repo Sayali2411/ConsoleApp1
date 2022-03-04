@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <Compile Remove="DictionaryHashTable.cs" />
-    <Compile Remove="Ioops.cs" />
   </ItemGroup>
 
 </Project>
