@@ -5,57 +5,57 @@ Que :- Diffrence between else if ladder and swich?
 
 BASIS OF COMPARISON                         ELSE IF LADDER                                  SWITCH CASE
 
- The control                                           In else if ladder, the control runs                      In else if ladder, the control
-                                                              through the every else if                                 runs through the every else if
-                                                              statement until it arrives at the                        statement until it arrives at the 
-			              rue value of the statement or                          true value of the statement or
-                                                              until it comes to the end of the                       until it comes to the end of the
-                                                              else if ladder.                                                 else if ladder.  
+ The control                               In else if ladder, the control runs               In else if ladder, the control
+                                           through the every else if                         runs through the every else if
+                                           statement until it arrives at the                 statement until it arrives at the 
+			                   rue value of the statement or                     true value of the statement or
+                                           until it comes to the end of the                  until it comes to the end of the
+                                           else if ladder.                                   else if ladder.  
 
 
-  Working	                                            Else if ladder statement works                           Switch case statement work on the 
-			           on the basis of true false                                    basis of equality operator.
- 			           (zero/non-zero) basis.	
+  Working	                          Else if ladder statement works                      Switch case statement work on the 
+			                  on the basis of true false                          basis of equality operator.
+ 			                  (zero/non-zero) basis.	
 
 
-  Use of Break Statement                        In switch, the use of break statement                   In else if ladder, the use of break
-			           is mandatory and very important.                        statement is not very essential.  
+  Use of Break Statement                  In switch, the use of break statement                In else if ladder, the use of break
+			                  is mandatory and very important.                     statement is not very essential.  
 
 
-  Variable Data                                      Integer is the only variable data type that               Either integer or character is the variable 
-                                                           can be in expression of switch.                           data type used in the expression of else if ladder
+  Variable Data                           Integer is the only variable data type that           Either integer or character is the variable 
+                                          can be in expression of switch.                       data type used in the expression of else if ladder
 
-  Usage                                                Else if ladder is used when there is                       Switch case is used when there is only one condition 
-                                                          multiple conditions are to be tested.                     and multiple values of the same are to be tested.  
+  Usage                                   Else if ladder is used when there is                   Switch case is used when there is only one condition 
+                                          multiple conditions are to be tested.                  and multiple values of the same are to be tested.  
 
 
 Que :- Diffrence between String, StringBuffer and StringBuilder?
 
    Parameter              String                                   StringBuffer                              StringBuilder
 
-   Storage                String Pool                            Heap                                          Heap            
+   Storage                String Pool                            Heap                               Heap            
   
 
-   Thread Safe         Not used in a 
-                              threaded environment            Used in a multi-threaded             Used in a single-threaded 
-                                                                          environment                               environment
+   Thread Safe            Not used in a 
+                          threaded environment                 Used in a multi-threaded             Used in a single-threaded 
+                                                               environment                          environment
 
-   Performance         Slow                                   Slower than StringBuilder            Faster than StringBuffer
-                                                                          but faster than String
+   Performance            Slow                                Slower than StringBuilder            Faster than StringBuffer
+                                                              but faster than String
 
 
-   Syntax               String var =ìEdurekaî;           StringBuffer var = new               StringBuilder var = new         
-                            String var=new String             StringBuffer("Edureka");            StringBuilder("Edureka");    
-	            (ìEdurekaî);   
+   Syntax             String var =‚ÄúEdureka‚Äù;                  StringBuffer var = new               StringBuilder var = new         
+                      String var=new String                   StringBuffer("Edureka");             StringBuilder("Edureka");    
+	              (‚ÄúEdureka‚Äù);   
 
 
 Que :- What is Collection and its Hierarchy?
 
 Collection is a set or group of related objects. It is like the array but it has some advanced features of shrinking and growing the collection.
- Each collection is a class, which we need to declare or create the object of that class before adding any element. All collections are available in System.
+Each collection is a class, which we need to declare or create the object of that class before adding any element. All collections are available in System.
 
 hierarchy of collection :- IEnumerable is the base interface of all collections. It provides an enumerator for simple iteration. 
-		     It has a method GetEnumerator() that returns an enumerator that iterates through a collection.
+		           It has a method GetEnumerator() that returns an enumerator that iterates through a collection.
 
 Que :- What is Collection Framework?
 
@@ -83,33 +83,33 @@ Que :- Diffrence between Array and ArrayList?
                can store only specific type of items\elements   
 
                In arrays we can store only one datatype either int,                In arraylist we can store all the datatype values
-               string, char etcÖ        
+               string, char etc‚Ä¶        
  
-              Array cant accept null                                                           ArrayList collection accepts null
+               Array cant accept null                                              ArrayList collection accepts null
 
-             Arrays belong to System.Array namespace                            Arraylist belongs to System.Collection namespaces
-             using System.Collections;
-             using System;
+               Arrays belong to System.Array namespace                             Arraylist belongs to System.Collection namespaces
+               using System.Collections;
+               using System;
 	
-           Example -                                                                               Example -
-           int[] intArray=new int[]{2};                                                     ArrayList Arrlst = new ArrayList();
-           intArray[0] = 1;                                                                      Arrlst.Add("Sagar");
-           intArray[0] = 1;                                                                      Arrlst.Add(1);
-           intArray[2] = 2;                                                                      Arrlst.Add(null);
+           Example -                                                                         Example -
+           int[] intArray=new int[]{2};                                                      ArrayList Arrlst = new ArrayList();
+           intArray[0] = 1;                                                                  Arrlst.Add("Sagar");
+           intArray[0] = 1;                                                                  Arrlst.Add(1);
+           intArray[2] = 2;                                                                  Arrlst.Add(null);
 
 Que :- Benifits of Multithreading?
  Improved performance :- Provides improvement in the performance of the processor by simultaneous execution 
-		       of computation and the I/O operations.
+		         of computation and the I/O operations.
 
  Minimized system resource usage :- Minimizes the use of system resources by using threads, which share the 
-			      same address space and belong to the same process.
+			            same address space and belong to the same process.
 
 Simultaneous access to multiple applications :- Provides access to multiple applications at the same time because 
-				      of quick context switching among threads.
+				                of quick context switching among threads.
 
 Program structure simplification :- Simplifies the structure of complex applications, such as multimedia applications.
-                                                    Each activity can be written in separate methods that makes complex program easy 
-			    to design and code.
+                                    Each activity can be written in separate methods that makes complex program easy 
+			            to design and code.
 
 Que :- Thread Lifecycle with its various Methods?
 
